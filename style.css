@@ -319,7 +319,6 @@ a { color: inherit; text-decoration: none; }
 .carousel-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
   overflow: hidden;
   background: #000;
 }
@@ -330,16 +329,18 @@ a { color: inherit; text-decoration: none; }
 }
 .carousel-slide {
   min-width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .carousel-slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .carousel-btn {
