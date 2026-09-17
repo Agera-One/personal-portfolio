@@ -76,7 +76,7 @@ const PROYEK = [
     ],
     gambarJalur: "proyek-02.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
-    github: "#",
+    github: "https://github.com/Agera-One/sistem-pengarsipan-dokumen",
     demo: null,
   },
   {
@@ -102,7 +102,7 @@ const PROYEK = [
     ],
     gambarJalur: "proyek-03.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
-    github: "#",
+    github: "https://github.com/Agera-One/sistem-pendaftaran-magang",
     demo: null,
   },
   {
@@ -127,7 +127,7 @@ const PROYEK = [
     ],
     gambarJalur: "proyek-04.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
-    github: "#",
+    github: "https://github.com/Agera-One/artikel-app",
     demo: null,
   },
   {
@@ -152,7 +152,7 @@ const PROYEK = [
     ],
     gambarJalur: "proyek-05.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
-    github: "#",
+    github: "https://github.com/Agera-One/ppdb-sekolah",
     demo: null,
   },
 ];
