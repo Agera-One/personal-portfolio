@@ -18,7 +18,7 @@ const PROFIL = {
 const PROYEK = [
   {
     nomor: "01",
-    nama: "Website Invoicing",
+    nama: "Website Invoice Digital",
     ringkas:
       "Situs web pembuatan faktur adalah aplikasi berbasis PHP native yang digunakan untuk mengelola pelanggan, item, faktur, pembayaran, dan laporan penjualan.",
     peran: "Backend Developer",
@@ -31,7 +31,13 @@ const PROYEK = [
       "Pencatatan dan pelacakan status pembayaran",
       "Laporan penjualan berdasarkan periode",
     ],
-    gambar: ["invoice.png"],
+    gambar: [
+      "invoice/dashboard.png",
+      "invoice/invoice.png",
+      "invoice/invoice-detail.png",
+      "invoice/payment.png",
+      "invoice/company.png"
+    ],
     gambarJalur: "proyek-01.png",
     gambarKeterangan: "[Ganti dengan screenshot halaman utama proyek]",
     github: "https://github.com/Agera-One/invoicing-wevelope.git",
@@ -52,7 +58,10 @@ const PROYEK = [
       "Pengaturan hak akses dokumen per pengguna",
       "Riwayat aktivitas dokumen (unggah, ubah, hapus)",
     ],
-    gambar: ["Pengarsipan.jpeg"],
+    gambar: [
+      "pengarsipan/dashboard.png",
+      "pengarsipan/document.png"
+    ],
     gambarJalur: "proyek-02.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
     github: "#",
@@ -73,7 +82,12 @@ const PROYEK = [
       "Pelacakan status pendaftaran oleh pendaftar",
       "Notifikasi perubahan status pendaftaran",
     ],
-    gambar: ["magang.jpeg"],
+    gambar: [
+      "magang/lowongan.png",
+      "magang/dashboard-siswa.png",
+      "magang/dashboard-perusahaan.png",
+      "magang/pelamar.png",
+    ],
     gambarJalur: "proyek-03.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
     github: "#",
@@ -81,7 +95,7 @@ const PROYEK = [
   },
   {
     nomor: "04",
-    nama: "Website Pembuatan Artikel",
+    nama: "Platform Publikasi Artikel",
     ringkas:
       "Pusat publikasi konten online yang memungkinkan pengguna untuk menulis, menyunting, dan membaca artikel/postingan blog dengan mudah.",
     peran: "Backend Developer",
@@ -94,8 +108,37 @@ const PROYEK = [
       "Manajemen status draf dan publikasi",
       "Halaman baca artikel untuk pengunjung",
     ],
-    gambar: ["artikel.jpeg"],
+    gambar: [
+      "artikel/home.png",
+      "artikel/recommend.png",
+      "artikel/artikel.png",
+    ],
     gambarJalur: "proyek-04.png",
+    gambarKeterangan: "[Ganti dengan screenshot proyek]",
+    github: "#",
+    demo: null,
+  },
+  {
+    nomor: "05",
+    nama: "Website PPDB Sekolah",
+    ringkas:
+      "Platform digital Penerimaan Peserta Didik Baru (PPDB) yang memungkinkan calon siswa untuk melakukan pendaftaran sekolah secara online.",
+    peran: "Backend Developer",
+    tahun: "2025",
+    status: "Selesai",
+    teknologi: ["Laravel", "Tailwind CSS", "Javascript"],
+    fitur: [
+      "Formulir pendaftaran calon siswa secara online",
+      "Unggah dokumen persyaratan (Ijazah, KK, Akta)",
+      "Verifikasi dan validasi berkas pendaftaran oleh admin/panitia",
+      "Pengumuman hasil seleksi penerimaan siswa baru",
+    ],
+    gambar: [
+      "ppdb/alur.png",
+      "ppdb/kelas.png",
+      "ppdb/formulir.png",
+    ],
+    gambarJalur: "proyek-05.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
     github: "#",
     demo: null,
