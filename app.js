@@ -36,7 +36,7 @@ const PROYEK = [
     peran: "Backend Developer",
     tahun: "2026",
     status: "Selesai",
-    teknologi: ["HTML", "Javascript", "PHP", "Bootstrap"],
+    teknologi: ["Javascript", "PHP", "Bootstrap"],
     fitur: [
       "Manajemen data pelanggan dan item/produk",
       "Pembuatan dan pengelolaan faktur",
@@ -113,7 +113,7 @@ const PROYEK = [
     peran: "Backend Developer",
     tahun: "2025",
     status: "Selesai",
-    teknologi: ["Laravel", "Tailwind CSS", "Javascript"],
+    teknologi: ["PHP", "CSS", "Javascript"],
     fitur: [
       "Editor untuk menulis dan menyunting artikel",
       "Pengelolaan kategori dan tag artikel",
