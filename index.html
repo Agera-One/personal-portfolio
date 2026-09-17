@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dzaki Prasetyo — Backend Developer</title>
+<meta name="description" content="Portfolio pribadi Dzaki Prasetyo, Backend Developer. Proyek, teknologi, dan proses belajar pengembangan software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="lewati" href="#konten">Lewati ke konten utama</a>
+
+<header class="situs-header" id="situs-header">
+  <div class="progres" aria-hidden="true"><span id="progres-isi"></span></div>
+  <nav class="nav wrap" aria-label="Navigasi utama">
+    <div class="nav-baris">
+      <a class="nav-merek" href="#beranda">Dzaki Prasetyo</a>
+
+      <ul class="nav-daftar" id="nav-daftar">
+        <li><a class="nav-tautan" href="#beranda" data-nav="beranda">Beranda</a></li>
+        <li><a class="nav-tautan" href="#proyek" data-nav="proyek">Proyek</a></li>
+        <li><a class="nav-tautan" href="#tentang" data-nav="tentang">Tentang Saya</a></li>
+        <li><a class="nav-tautan" href="#teknologi" data-nav="teknologi">Teknologi</a></li>
+        <li><a class="nav-tautan" href="#kontak" data-nav="kontak">Hubungi Saya</a></li>
+      </ul>
+
+      <button class="nav-tombol" id="nav-tombol" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    </div>
+
+    <ul class="nav-menu" id="nav-menu" hidden>
+      <li><a href="#beranda" data-nav="beranda">Beranda</a></li>
+      <li><a href="#proyek" data-nav="proyek">Proyek</a></li>
+      <li><a href="#tentang" data-nav="tentang">Tentang Saya</a></li>
+      <li><a href="#teknologi" data-nav="teknologi">Teknologi</a></li>
+      <li><a href="#kontak" data-nav="kontak">Hubungi Saya</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="konten">
+
+  <!-- ——— Beranda ——— -->
+  <section class="hero" id="beranda">
+    <div class="wrap grid hero-grid">
+      <div class="k-8">
+        <p class="hero-label muncul-awal" style="--tunda:60ms">BACKEND DEVELOPER</p>
+        <h1 class="hero-nama muncul-awal" style="--tunda:180ms">Dzaki Prasetyo</h1>
+        <p class="hero-deskripsi muncul-awal" style="--tunda:320ms">
+          Saya sedang mengembangkan aplikasi web dan mempelajari pengembangan software melalui project nyata.
+        </p>
+        <div class="hero-tombol muncul-awal" style="--tunda:440ms">
+          <a class="tombol tombol-utama" href="#proyek">Lihat Proyek</a>
+          <a class="tombol tombol-garis" href="#kontak">Hubungi Saya</a>
+        </div>
+      </div>
+
+      <div class="k-4 hero-samping">
+        <div class="hero-teknis muncul-awal" style="--tunda:560ms">
+          <p class="mono hero-tumpukan">PHP / Laravel / MySQL</p>
+          <ul class="mono hero-fokus">
+            <li>Backend</li>
+            <li>Pengembangan Web</li>
+            <li>Pembelajaran</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Proyek Pilihan ——— -->
+  <section class="bagian" id="proyek">
+    <div class="wrap">
+      <div class="judul-bagian">
+        <div class="garis"></div>
+        <div class="judul-baris">
+          <h2 class="muncul">Proyek Pilihan</h2>
+          <p class="mono judul-keterangan muncul" style="--tunda:120ms">
+            Isi dan screenshot setiap proyek masih berupa placeholder. Ganti melalui data PROYEK di dalam app.js.
+          </p>
+        </div>
+      </div>
+
+      <div id="daftar-proyek"></div>
+
+      <noscript>
+        <p class="mono catatan">Daftar proyek dimuat melalui app.js. Aktifkan JavaScript untuk melihatnya.</p>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- ——— Tentang Saya ——— -->
+  <section class="bagian" id="tentang">
+    <div class="wrap">
+      <div class="judul-bagian">
+        <div class="garis"></div>
+        <div class="judul-baris">
+          <h2 class="muncul">Tentang Saya</h2>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="k-7">
+          <p class="kalimat-besar muncul">
+            Saya sedang mengembangkan aplikasi web dan mempelajari pengembangan software melalui project nyata.
+          </p>
+          <div class="teks-panjang">
+            <p class="muncul" style="--tunda:80ms">
+              Sebagian besar waktu saya habis di sisi backend: merancang struktur tabel, menulis logika aplikasi,
+              dan memastikan data yang masuk tersimpan dengan benar. Bagian inilah yang paling sering membuat saya
+              berhenti sebentar untuk membaca ulang dokumentasi.
+            </p>
+            <p class="muncul" style="--tunda:140ms">
+              Cara belajar saya sederhana: memilih satu masalah, membuat aplikasinya, lalu memperbaiki bagian yang
+              ternyata salah rancang. Beberapa proyek di halaman ini sudah ditulis ulang lebih dari sekali karena
+              pendekatan pertamanya terlalu rumit.
+            </p>
+            <p class="muncul" style="--tunda:200ms">
+              Saya juga mencoba teknologi di luar backend, seperti React dan Tailwind CSS, secukupnya agar bisa
+              membangun antarmuka untuk aplikasi yang saya buat sendiri.
+            </p>
+          </div>
+        </div>
+
+        <!-- Perbaikan: k-5 k-mulai-8 (7 + 5 = 12 kolom penuh) -->
+        <div class="k-5">
+          <div class="blok-samping muncul" style="--tunda:120ms">
+            <h3 class="label-kecil">Yang Sedang Saya Dalami</h3>
+            <ul class="mono daftar-sederhana">
+              <li>Pengembangan backend</li>
+              <li>Pengembangan aplikasi web</li>
+              <li>Perancangan database</li>
+              <li>Software development</li>
+              <li>Belajar melalui proyek</li>
+              <li>Eksperimen dengan teknologi baru</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Teknologi ——— -->
+  <section class="bagian" id="teknologi">
+    <div class="wrap">
+      <div class="judul-bagian">
+        <div class="garis"></div>
+        <div class="judul-baris">
+          <h2 class="muncul">Teknologi yang Saya Gunakan</h2>
+          <p class="mono judul-keterangan muncul" style="--tunda:120ms">
+            Teknologi yang saya pakai untuk membangun dan mempelajari proyek.
+          </p>
+        </div>
+      </div>
+
+      <div class="teknologi-grid">
+        <div class="muncul">
+          <h3 class="label-aksen">Bahasa Pemrograman</h3>
+          <ul class="teknologi-daftar">
+            <li>PHP</li><li>Java</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li>
+          </ul>
+        </div>
+        <div class="muncul" style="--tunda:90ms">
+          <h3 class="label-aksen">Framework dan Library</h3>
+          <ul class="teknologi-daftar">
+            <li>Laravel</li><li>React</li><li>Bootstrap</li><li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="muncul" style="--tunda:180ms">
+          <h3 class="label-aksen">Database</h3>
+          <ul class="teknologi-daftar">
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="muncul" style="--tunda:270ms">
+          <h3 class="label-aksen">Sistem dan Tools</h3>
+          <ul class="teknologi-daftar">
+            <li>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Perjalanan Belajar ——— -->
+  <section class="bagian" id="perjalanan">
+    <div class="wrap">
+      <div class="judul-bagian">
+        <div class="garis"></div>
+        <div class="judul-baris">
+          <h2 class="muncul">Perjalanan Belajar</h2>
+          <p class="mono judul-keterangan muncul" style="--tunda:120ms">
+            Portfolio ini bagian dari proses belajar melalui pembuatan proyek nyata.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="k-7">
+          <ol class="siklus">
+            <li class="muncul">
+              <span class="mono siklus-nomor">1</span>
+              <div>
+                <h3>Belajar</h3>
+                <p>Membaca dokumentasi dan mencoba konsep dasar sampai paham cara kerjanya, bukan hanya cara menyalinnya.</p>
+              </div>
+            </li>
+            <li class="muncul" style="--tunda:70ms">
+              <span class="mono siklus-nomor">2</span>
+              <div>
+                <h3>Membuat</h3>
+                <p>Menerapkan konsep itu ke proyek kecil yang punya masalah nyata, supaya terlihat bagian mana yang belum saya mengerti.</p>
+              </div>
+            </li>
+            <li class="muncul" style="--tunda:140ms">
+              <span class="mono siklus-nomor">3</span>
+              <div>
+                <h3>Menemukan Masalah</h3>
+                <p>Error, query yang lambat, atau struktur data yang terlanjur salah biasanya muncul di tahap ini.</p>
+              </div>
+            </li>
+            <li class="muncul" style="--tunda:210ms">
+              <span class="mono siklus-nomor">4</span>
+              <div>
+                <h3>Memperbaiki</h3>
+                <p>Menelusuri penyebabnya, memperbaiki kodenya, lalu menulis ulang bagian yang ternyata dirancang terlalu rumit.</p>
+              </div>
+            </li>
+            <li class="muncul" style="--tunda:280ms">
+              <span class="mono siklus-nomor">5</span>
+              <div>
+                <h3>Belajar Lagi</h3>
+                <p>Masalah yang selesai biasanya membuka topik baru yang perlu dipelajari, dan siklusnya dimulai kembali.</p>
+              </div>
+            </li>
+            <li class="siklus-akhir muncul" style="--tunda:350ms">
+              <p class="mono">Siklus ini berulang di setiap proyek.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Perbaikan: k-5 k-mulai-8 (7 + 5 = 12 kolom penuh) -->
+        <div class="k-5">
+          <div class="blok-samping muncul" style="--tunda:100ms">
+            <h3 class="judul-kecil">Cara Saya Belajar</h3>
+            <ul class="prinsip">
+              <li><span class="tanda" aria-hidden="true">—</span><span>Belajar dengan membuat proyek, bukan hanya mengikuti tutorial sampai selesai.</span></li>
+              <li><span class="tanda" aria-hidden="true">—</span><span>Memahami masalahnya lebih dulu sebelum menulis baris kode pertama.</span></li>
+              <li><span class="tanda" aria-hidden="true">—</span><span>Mencari solusi sendiri dari masalah yang muncul di tengah pengerjaan.</span></li>
+              <li><span class="tanda" aria-hidden="true">—</span><span>Kembali memperbaiki kode lama ketika sudah tahu cara yang lebih rapi.</span></li>
+              <li><span class="tanda" aria-hidden="true">—</span><span>Mencari tau error sampai paham penyebabnya, bukan langsung mengganti kode secara acak.</span></li>
+              <li><span class="tanda" aria-hidden="true">—</span><span>Memahami dasarnya dulu sebelum memakai teknologi atau library baru.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Hubungi Saya ——— -->
+  <section class="bagian" id="kontak">
+    <div class="wrap">
+      <div class="judul-bagian">
+        <div class="garis"></div>
+        <div class="judul-baris">
+          <h2 class="muncul">Hubungi Saya</h2>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="k-6">
+          <p class="kalimat-besar muncul">
+            Untuk kesempatan kerja, magang, kolaborasi, atau diskusi mengenai pengembangan software.
+          </p>
+        </div>
+
+        <!-- Perbaikan: k-6 k-mulai-7 (6 + 6 = 12 kolom penuh) -->
+        <div class="k-6">
+          <ul class="kontak-daftar" id="kontak-daftar"></ul>
+          <p class="mono catatan">Data kontak masih placeholder. Ganti melalui data PROFIL di dalam app.js.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="situs-footer">
+  <div class="wrap footer-baris">
+    <div>
+      <p class="footer-nama">Dzaki Prasetyo</p>
+      <p class="mono footer-peran">Backend Developer</p>
+    </div>
+    <p class="mono footer-hak">© 2026 Dzaki Prasetyo</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
