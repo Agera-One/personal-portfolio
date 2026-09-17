@@ -9,9 +9,21 @@ const PROFIL = {
   nama: "Agera One",
   peran: "Backend Developer",
   kontak: [
-    { label: "Email", nilai: "dzakiprasetyo8@gmail.com", url: null },
-    { label: "GitHub", nilai: "Agera-One", url: null },
-    { label: "Instagram", nilai: "_jesko", url: null },
+    { 
+      label: "Email", 
+      nilai: "dzakiprasetyo8@gmail.com", 
+      url: "mailto:dzakiprasetyo8@gmail.com" 
+    },
+    { 
+      label: "GitHub", 
+      nilai: "Agera-One", 
+      url: "https://github.com/Agera-One" 
+    },
+    { 
+      label: "Instagram", 
+      nilai: "_jesko", 
+      url: "https://instagram.com/_jesko" 
+    },
   ],
 };
 
@@ -64,7 +76,7 @@ const PROYEK = [
     ],
     gambarJalur: "proyek-02.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
-    github: "https://github.com/Agera-One/sistem-pengarsipan-dokumen.git",
+    github: "#",
     demo: null,
   },
   {
@@ -90,7 +102,7 @@ const PROYEK = [
     ],
     gambarJalur: "proyek-03.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
-    github: "https://github.com/Agera-One/sistem-pendaftaran-magang.git",
+    github: "#",
     demo: null,
   },
   {
@@ -115,7 +127,7 @@ const PROYEK = [
     ],
     gambarJalur: "proyek-04.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
-    github: "https://github.com/Agera-One/artikel-app.git",
+    github: "#",
     demo: null,
   },
   {
@@ -140,7 +152,7 @@ const PROYEK = [
     ],
     gambarJalur: "proyek-05.png",
     gambarKeterangan: "[Ganti dengan screenshot proyek]",
-    github: "https://github.com/Agera-One/ppdb-sekolah.git",
+    github: "#",
     demo: null,
   },
 ];
@@ -393,21 +405,55 @@ function pasangProyek() {
 
 /* ——— BAGIAN KONTAK ——— */
 
+function ikonKontak(label) {
+  const s = label.trim().toLowerCase();
+  if (s.startsWith("email")) return "@";
+  if (s.startsWith("github")) return "GH";
+  if (s.startsWith("linkedin")) return "in";
+  if (s.startsWith("instagram")) return "IG";
+  return label.slice(0, 2).toUpperCase();
+}
+
 function pasangKontak() {
   const wadah = document.getElementById("kontak-daftar");
   if (!wadah) return;
   PROFIL.kontak.forEach((k) => {
     const li = el("li");
-    li.appendChild(el("span", "kontak-label", k.label));
+
+    li.appendChild(el("span", "kontak-ikon", ikonKontak(k.label)));
+
+    const teks = el("div", "kontak-teks");
+    teks.appendChild(el("span", "kontak-label", k.label));
     if (k.url) {
       const a = el("a", "kontak-nilai tautan");
       a.href = k.url;
       a.appendChild(document.createTextNode(k.nilai + " "));
       a.appendChild(el("span", "panah", "↗"));
-      li.appendChild(a);
+      teks.appendChild(a);
     } else {
-      li.appendChild(el("span", "kontak-nilai", k.nilai));
+      teks.appendChild(el("span", "kontak-nilai", k.nilai));
     }
+    li.appendChild(teks);
+
+    if (!k.url && !k.nilai.startsWith("[")) {
+      const btn = el("button", "kontak-salin", "Salin");
+      btn.type = "button";
+      btn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(k.nilai);
+          btn.textContent = "Tersalin";
+          btn.classList.add("disalin");
+          setTimeout(() => {
+            btn.textContent = "Salin";
+            btn.classList.remove("disalin");
+          }, 1600);
+        } catch (err) {
+          /* Clipboard tidak tersedia — tombol dibiarkan diam-diam tanpa aksi */
+        }
+      });
+      li.appendChild(btn);
+    }
+
     wadah.appendChild(li);
   });
 }
@@ -497,11 +543,19 @@ function pasangNavigasi() {
   bagian.forEach((b) => obs.observe(b));
 }
 
+/* ——— STATISTIK HERO (diambil dari data nyata) ——— */
+
+function pasangStatistik() {
+  const target = document.getElementById("stat-proyek");
+  if (target) target.textContent = PROYEK.length + " Proyek";
+}
+
 /* ——— MULAI ——— */
 
 document.addEventListener("DOMContentLoaded", () => {
   pasangProyek();
   pasangKontak();
+  pasangStatistik();
   pasangMuncul();
   pasangNavigasi();
 });
