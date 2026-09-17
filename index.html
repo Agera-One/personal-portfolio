@@ -45,6 +45,9 @@
 
   <!-- ——— Beranda ——— -->
   <section class="hero" id="beranda">
+    <span class="hero-sudut kiri-atas" aria-hidden="true"></span>
+    <span class="hero-sudut kanan-bawah" aria-hidden="true"></span>
+
     <div class="wrap grid hero-grid">
       <div class="k-8">
         <p class="hero-label muncul-awal" style="--tunda:60ms">BACKEND DEVELOPER</p>
@@ -56,19 +59,45 @@
           <a class="tombol tombol-utama" href="#proyek">Lihat Proyek</a>
           <a class="tombol tombol-garis" href="#kontak">Hubungi Saya</a>
         </div>
+        <p class="hero-catatan muncul-awal" style="--tunda:520ms">
+          <span class="status-titik aktif" aria-hidden="true"></span>
+          Terbuka untuk peluang kerja, magang, dan kolaborasi
+        </p>
       </div>
 
       <div class="k-4 hero-samping">
-        <div class="hero-teknis muncul-awal" style="--tunda:560ms">
-          <p class="mono hero-tumpukan">PHP / Laravel / MySQL</p>
-          <ul class="mono hero-fokus">
-            <li>Backend</li>
-            <li>Pengembangan Web</li>
-            <li>Pembelajaran</li>
-          </ul>
+        <div class="panel muncul-awal" style="--tunda:560ms">
+          <div class="panel-kepala">
+            <span class="panel-titik" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="panel-label mono">profil.json</span>
+          </div>
+          <div class="hero-panel-isi">
+            <div class="hero-panel-baris">
+              <span>stack</span>
+              <span>PHP / Laravel / MySQL</span>
+            </div>
+            <div class="hero-panel-baris">
+              <span>fokus</span>
+              <span class="hero-fokus-baris">
+                <span class="tag">Backend</span>
+                <span class="tag">Web</span>
+                <span class="tag">Belajar</span>
+              </span>
+            </div>
+            <div class="hero-panel-baris">
+              <span>proyek</span>
+              <span id="stat-proyek">—</span>
+            </div>
+            <div class="hero-panel-baris">
+              <span>status</span>
+              <span>Terus belajar</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="hero-scroll" aria-hidden="true">GULIR</div>
   </section>
 
   <!-- ——— Proyek Pilihan ——— -->
@@ -157,25 +186,33 @@
         <div class="muncul">
           <h3 class="label-aksen">Bahasa Pemrograman</h3>
           <ul class="teknologi-daftar">
-            <li>PHP</li><li>Java</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li>
+            <li><span class="tech-ikon" aria-hidden="true">PHP</span><span>PHP</span></li>
+            <li><span class="tech-ikon" aria-hidden="true">JV</span><span>Java</span></li>
+            <li><span class="tech-ikon" aria-hidden="true">JS</span><span>JavaScript</span></li>
+            <li><span class="tech-ikon" aria-hidden="true">&lt;&gt;</span><span>HTML</span></li>
+            <li><span class="tech-ikon" aria-hidden="true">{ }</span><span>CSS</span></li>
+            <li><span class="tech-ikon" aria-hidden="true">SQL</span><span>SQL</span></li>
           </ul>
         </div>
         <div class="muncul" style="--tunda:90ms">
           <h3 class="label-aksen">Framework dan Library</h3>
           <ul class="teknologi-daftar">
-            <li>Laravel</li><li>React</li><li>Bootstrap</li><li>Tailwind CSS</li>
+            <li><span class="tech-ikon" aria-hidden="true">Lv</span><span>Laravel</span></li>
+            <li><span class="tech-ikon" aria-hidden="true">⚛</span><span>React</span></li>
+            <li><span class="tech-ikon" aria-hidden="true">Bs</span><span>Bootstrap</span></li>
+            <li><span class="tech-ikon" aria-hidden="true">Tw</span><span>Tailwind CSS</span></li>
           </ul>
         </div>
         <div class="muncul" style="--tunda:180ms">
           <h3 class="label-aksen">Database</h3>
           <ul class="teknologi-daftar">
-            <li>MySQL</li>
+            <li><span class="tech-ikon" aria-hidden="true">My</span><span>MySQL</span></li>
           </ul>
         </div>
         <div class="muncul" style="--tunda:270ms">
           <h3 class="label-aksen">Sistem dan Tools</h3>
           <ul class="teknologi-daftar">
-            <li>Linux</li>
+            <li><span class="tech-ikon" aria-hidden="true">Lx</span><span>Linux</span></li>
           </ul>
         </div>
       </div>
@@ -276,7 +313,13 @@
 
         <!-- Perbaikan: k-6 k-mulai-7 (6 + 6 = 12 kolom penuh) -->
         <div class="k-6">
-          <ul class="kontak-daftar" id="kontak-daftar"></ul>
+          <div class="panel muncul" style="--tunda:100ms">
+            <div class="panel-kepala">
+              <span class="panel-titik" aria-hidden="true"><span></span><span></span><span></span></span>
+              <span class="panel-label mono">kontak.txt</span>
+            </div>
+            <ul class="kontak-daftar" id="kontak-daftar"></ul>
+          </div>
         </div>
       </div>
     </div>
