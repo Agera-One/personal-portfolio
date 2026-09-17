@@ -18,18 +18,14 @@ const PROFIL = {
 const PROYEK = [
   {
     nomor: "01",
-    nama: "[Nama proyek pertama]",
+    nama: "Website Invoicing",
     ringkas:
-      "[Tulis satu sampai dua kalimat tentang apa yang dikerjakan proyek ini. Jelaskan fungsinya, bukan manfaat pemasarannya.]",
-    peran: "[Peran dalam proyek]",
-    tahun: "[tahun]",
-    status: "Sedang Dikembangkan",
-    teknologi: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-    fitur: [
-      "[Fitur utama pertama]",
-      "[Fitur utama kedua]",
-      "[Fitur utama ketiga]",
-    ],
+      "Situs web pembuatan faktur adalah aplikasi berbasis PHP native yang digunakan untuk mengelola pelanggan, item, faktur, pembayaran, dan laporan penjualan.",
+    peran: "Backend Developer",
+    tahun: "2026",
+    status: "Selesai",
+    teknologi: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "Bootstrap"],
+    fitur: ["Sales Report", "Invoice Management", "Payment Management"],
     gambar: ["invoice.png"],
     gambarJalur: "proyek-01.png",
     gambarKeterangan: "[Ganti dengan screenshot halaman utama proyek]",
