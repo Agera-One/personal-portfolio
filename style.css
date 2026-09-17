@@ -495,7 +495,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--mute);
   margin-left: auto;
 }
-.status-titik { width: 6px; height: 6px; border-radius: 50%; background: var(--mute-2); }
+.status-titik { width: 6px; height: 6px; border-radius: 50%; background: green; }
 .status-titik.aktif { background: var(--aksen); animation: denyut 2.4s ease-in-out infinite; }
 
 .proyek-samping {
